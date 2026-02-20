@@ -7,7 +7,7 @@ export class EmailTemplateRender {
     number | boolean | string | null | Array<Record<string, string>>
   >;
   private static removeBlankRegex =
-    /(<\s*\w+\s*>\s*)?{#rmblank}(.*?)\s*{#endrmblank}(\s*<\/\s*\w+\s*>)?/gm;
+    /(<\s*\w+\s*>\s*)?{#rmblank}\s*([\s\S]*?)\s*{#endrmblank}(\s*<\/\s*\w+\s*>)?/gm;
   private static createBlocLoopRegex = (key: string) =>
     new RegExp(`{#each${key}}(.*?){#end${key}}`, "gs");
 
