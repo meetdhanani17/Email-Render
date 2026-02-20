@@ -1,0 +1,5 @@
+export enum EmailTemplateNames {
+  STRIPE_SUCCESS = 'STRIPE_SUCCESS',
+  STRIPE_UPDATE = 'STRIPE_UPDATE',
+  STRIPE_CANCEL = 'STRIPE_CANCEL',
+}
